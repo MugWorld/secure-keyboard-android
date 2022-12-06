@@ -2,6 +2,7 @@ package com.hcxc.securekeyboardapp
 
 import android.app.Activity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity(), ScreenShotManager.OnScreenShotListener
     }
 
     override fun onShot(imagePath: String?) {
+        Log.e("onScreenShot1-=-==-=-=--=-=-=-=-=-=", imagePath?:"")
         Toast.makeText(applicationContext, "onScreenShot", Toast.LENGTH_LONG).show()
     }
 
